@@ -13,7 +13,7 @@ class App extends Component {
                             <h1 className="primeHd">Todo List</h1>
                         </div>
                         <div className="appBar-actions">
-                            <div className="nav">
+                            <nav className="nav">
                                 <ul className="nav-list">
                                     <li>
                                         <a href="/Daily" className="navLink">Daily</a>
@@ -25,7 +25,7 @@ class App extends Component {
                                         <a href="/Dashboard" className="navLink">Dashboard</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </nav>
                         </div>
                     </header>
                 </div>
