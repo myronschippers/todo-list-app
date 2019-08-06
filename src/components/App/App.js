@@ -33,7 +33,9 @@ class App extends Component {
                     PAGE BODY
                 </div>
                 <div className="scaffold-ft">
-                    FOOTER
+                    <footer className="appBase">
+                        &copy; Todo List 2019
+                    </footer>
                 </div>
             </div>
         );
