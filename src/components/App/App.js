@@ -30,7 +30,12 @@ class App extends Component {
                     </header>
                 </div>
                 <div className="scaffold-bd">
-                    PAGE BODY
+                    <div className="splash">
+                        <div className="splash-content">
+                            <h2 className="splash-content-hdg">Keep yourself organized</h2>
+                            <button className="btn btn_big">Get Started</button>
+                        </div>
+                    </div>
                 </div>
                 <div className="scaffold-ft">
                     <footer className="appBase">
