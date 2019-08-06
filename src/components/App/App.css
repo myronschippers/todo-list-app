@@ -128,3 +128,33 @@ Navigation
     color: #f0f8ff;
     text-decoration: none;
 }
+
+/* ----------------------------------------------------------------------
+App Base
+---------------------------------------------------------------------- */
+
+.appBase {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px 20px;
+    background: #f8f8ff;
+    font-size: 0.8rem;
+    text-align: center;
+
+    position: relative;
+}
+
+.appBase:before {
+    content: " ";
+    width: 70%;
+    height: 1px;
+    border-radius: 1px;
+    background: #c0c0c0;
+
+    /* CSS Centering */
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+}
