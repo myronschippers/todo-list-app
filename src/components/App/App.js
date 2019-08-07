@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import SplashImg from '../SplashImg/SplashImg';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -30,12 +32,7 @@ class App extends Component {
                     </header>
                 </div>
                 <div className="scaffold-bd">
-                    <div className="splash">
-                        <div className="splash-content">
-                            <h2 className="splash-content-hdg">Keep yourself organized</h2>
-                            <button className="btn btn_big">Get Started</button>
-                        </div>
-                    </div>
+                    <SplashImg />
                 </div>
                 <div className="scaffold-ft">
                     <footer className="appBase">
