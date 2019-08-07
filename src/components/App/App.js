@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import SplashImg from '../SplashImg/SplashImg';
+import {
+    HashRouter as Router,
+    Route,
+    Link,
+} from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
