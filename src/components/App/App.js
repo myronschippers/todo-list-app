@@ -39,7 +39,7 @@ class App extends Component {
                         </header>
                     </div>
                     <div className="scaffold-bd">
-                        <Route path="/landing" component={LandingPage} />
+                        <Route path="/" component={LandingPage} />
                     </div>
                     <div className="scaffold-ft">
                         <footer className="appBase">
