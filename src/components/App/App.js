@@ -5,6 +5,7 @@ import {
     Route,
     Link,
 } from 'react-router-dom';
+import LandingPage from '../LandingPage/LandingPage';
 
 import logo from './logo.svg';
 import './App.css';
@@ -38,8 +39,7 @@ class App extends Component {
                         </header>
                     </div>
                     <div className="scaffold-bd">
-                        <Route />
-                        <SplashImg hdgText="Keep yourself organized" btnText="Get Started" />
+                        <Route path="/landing" component={LandingPage} />
                     </div>
                     <div className="scaffold-ft">
                         <footer className="appBase">
