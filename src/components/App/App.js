@@ -38,6 +38,7 @@ class App extends Component {
                         </header>
                     </div>
                     <div className="scaffold-bd">
+                        <Route />
                         <SplashImg hdgText="Keep yourself organized" btnText="Get Started" />
                     </div>
                     <div className="scaffold-ft">
