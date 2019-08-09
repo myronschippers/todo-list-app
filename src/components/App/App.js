@@ -7,12 +7,7 @@ class App extends Component {
         return (
             <div className="scaffold">
                 <div className="scaffold-hd">
-                    <header className="appBar">
-                        <div className="appBar-identity">
-                            <img src={logo} className="logoIcon" alt="logo" />
-                            <h1 className="primeHdg">Todo List</h1>
-                        </div>
-                    </header>
+                    HEADER
                 </div>
                 <div className="scaffold-bd">
                     MAIN BODY
