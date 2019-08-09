@@ -6,7 +6,15 @@ class App extends Component {
     render() {
         return (
             <div className="scaffold">
-                STUFF
+                <div className="scaffold-hd">
+                    HEADER
+                </div>
+                <div className="scaffold-bd">
+                    MAIN BODY
+                </div>
+                <div className="scaffold-ft">
+                    FOOTER
+                </div>
             </div>
         );
     }
