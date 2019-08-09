@@ -1,53 +1,27 @@
-import React, { Component } from 'react';
-import SplashImg from '../SplashImg/SplashImg';
-import {
-    HashRouter as Router,
-    Route,
-    Link,
-} from 'react-router-dom';
-import LandingPage from '../LandingPage/LandingPage';
 
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
     render() {
         return (
-            <Router>
-                <div className="scaffold">
-                    <div className="scaffold-hd">
-                        <header className="appBar">
-                            <div className="appBar-identity">
-                                <img src={logo} className="logoIcon" alt="logo" />
-                                <h1 className="primeHd">Todo List</h1>
-                            </div>
-                            <div className="appBar-actions">
-                                <nav className="nav">
-                                    <ul className="nav-list">
-                                        <li>
-                                            <a href="/Daily" className="navLink">Daily</a>
-                                        </li>
-                                        <li>
-                                            <a href="/Categories" className="navLink">Categories</a>
-                                        </li>
-                                        <li>
-                                            <a href="/Dashboard" className="navLink">Dashboard</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </header>
-                    </div>
-                    <div className="scaffold-bd">
-                        <Route path="/" component={LandingPage} />
-                    </div>
-                    <div className="scaffold-ft">
-                        <footer className="appBase">
-                            &copy; Todo List 2019
-                        </footer>
-                    </div>
-                </div>
-            </Router>
+            <div className="App">
+                <header className="App-header">
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <p>
+                        Edit <code>src/App.js</code> and save to reload.
+                    </p>
+                    <a
+                    className="App-link"
+                    href="https://reactjs.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                        Learn React
+                    </a>
+                </header>
+            </div>
         );
     }
 }
