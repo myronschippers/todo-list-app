@@ -6,16 +6,18 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import TodoList from '../TodoList/TodoList';
 
-const sampleList = [
-    'Mail Letter',
-    'Wash Dishes',
-    'Cut Grass',
-];
-
 class App extends Component {
+    state = {
+        sampleList: [
+            'Mail Letter',
+            'Wash Dishes',
+            'Cut Grass',
+        ],
+    }
+
     clickAddToList(event) {
-        sampleList.push('Pick Up Dinner');
-        console.log(sampleList);
+        this.state.sampleList.push('Pick Up Dinner');
+        console.log(this.state.sampleList);
     }
 
     render() {
@@ -25,7 +27,7 @@ class App extends Component {
                     <Header />
                 </div>
                 <div className="scaffold-bd">
-                    {JSON.stringify(sampleList)}
+                    {JSON.stringify(this.state.sampleList)}
                     <button onClick={this.clickAddToList}>Add Sample</button>
                     <TodoList />
                 </div>
