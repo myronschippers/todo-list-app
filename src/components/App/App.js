@@ -15,7 +15,7 @@ class App extends Component {
         ],
     }
 
-    clickAddToList(event) {
+    clickAddToList = (event) => {
         this.state.sampleList.push('Pick Up Dinner');
         console.log(this.state.sampleList);
     }
