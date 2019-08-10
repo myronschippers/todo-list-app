@@ -4,7 +4,7 @@ class TodoList extends Component {
     render() {
         return (
             <div>
-                TODO LIST
+                {JSON.stringify(this.props.list)}
             </div>
         );
     }

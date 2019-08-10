@@ -9,9 +9,21 @@ import TodoList from '../TodoList/TodoList';
 class App extends Component {
     state = {
         sampleList: [
-            'Mail Letter',
-            'Wash Dishes',
-            'Cut Grass',
+            {
+                name: 'Mail Letter',
+                description: 'A sample description of our todo.',
+                isComplete: false,
+            },
+            {
+                name: 'Wash Dishes',
+                description: 'A sample description of our todo.',
+                isComplete: true,
+            },
+            {
+                name: 'Cut Grass',
+                description: 'A sample description of our todo.',
+                isComplete: false,
+            },
         ],
     }
 
@@ -31,9 +43,7 @@ class App extends Component {
                     <Header />
                 </div>
                 <div className="scaffold-bd">
-                    {JSON.stringify(this.state.sampleList)}
-                    <button onClick={this.clickAddToList}>Add Sample</button>
-                    <TodoList />
+                    <TodoList list={this.state.sampleList} />
                 </div>
                 <div className="scaffold-ft">
                     <Footer />
