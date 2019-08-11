@@ -36,6 +36,24 @@ class App extends Component {
         console.log(this.state.sampleList);
     }
 
+    deleteTodoFromList = (index) => {
+        let newSampleList = this.state.sampleList;
+        newSampleList.splice(index, 1);
+    
+        this.setState({
+            sampleList: newSampleList,
+        });
+    }
+    
+    completeTodo = (isComplete, index) => {
+        let newSampleList = this.state.sampleList;
+        newSampleList[index].isComplete = isComplete;
+    
+        this.setState({
+            sampleList: newSampleList,
+        })
+    }
+
     render() {
         return (
             <div className="scaffold">
@@ -43,7 +61,11 @@ class App extends Component {
                     <Header />
                 </div>
                 <div className="scaffold-bd">
-                    <TodoList list={this.state.sampleList} />
+                    <TodoList
+                        list={this.state.sampleList}
+                        completeCallback={this.completeTodo}
+                        deleteCallback={this.deleteTodoFromList}
+                    />
                 </div>
                 <div className="scaffold-ft">
                     <Footer />

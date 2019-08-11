@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 
 class TodoItem extends Component {
     changeCompleteStatus = (event) => {
-        // update item complete status
+        const toggledCompleteStatus = !this.props.todo.isComplete;
+        const todoIndex = this.props.index;
+
+        this.props.completeCallback(toggledCompleteStatus, todoIndex);
     }
 
     clickDelete = (event) => {
-        // delete the todo item
+        const todoIndex = this.props.index;
+
+        this.props.deleteCallback(todoIndex);
     }
 
     render() {
@@ -26,8 +31,8 @@ class TodoItem extends Component {
                         />
                     </div>
                     <div>
-                        <h4>todo.name</h4>
-                        <p>todo.description</p>
+                        <h4>{todo.name}</h4>
+                        <p>{todo.description}</p>
                     </div>
                     <div>
                         <button
