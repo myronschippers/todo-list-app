@@ -5,6 +5,7 @@ import './App.css';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import TodoList from '../TodoList/TodoList';
+import AddTodo from '../AddTodo/AddTodo';
 
 class App extends Component {
     state = {
@@ -54,6 +55,19 @@ class App extends Component {
         })
     }
 
+    addTodoItem = (todo) => {
+        const newTodo = {
+            ...todo,
+            isComplete: false,
+        };
+        const newSampleList = this.state.sampleList;
+        newSampleList.push(newTodo);
+
+        this.setState({
+            sampleList: newSampleList,
+        });
+    }
+
     render() {
         return (
             <div className="scaffold">
@@ -61,6 +75,10 @@ class App extends Component {
                     <Header />
                 </div>
                 <div className="scaffold-bd">
+                    <h2>Daily Todo List</h2>
+                    <AddTodo
+                        addTodoCallback={this.addTodoItem}
+                    />
                     <TodoList
                         list={this.state.sampleList}
                         completeCallback={this.completeTodo}
