@@ -1,0 +1,28 @@
+.todoPill {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.todoPill > * + * {
+    margin-left: 10px;
+}
+
+.todoPill > *:last-child {
+    margin-left: auto;
+}
+
+.todoPill-hdg {
+    display: block;
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.todoPill-sub {
+    display: block;
+    margin: 0;
+    font-size: 0.8rem;
+    color: #7f7f8a;
+}

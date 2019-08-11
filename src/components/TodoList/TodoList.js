@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './TodoList.css';
 import TodoItem from '../TodoItem/TodoItem';
 
 class TodoList extends Component {
@@ -14,8 +15,8 @@ class TodoList extends Component {
         });
 
         return (
-            <div>
-                <ul>
+            <div className="box">
+                <ul className="cleanList">
                     {listItems}
                 </ul>
             </div>

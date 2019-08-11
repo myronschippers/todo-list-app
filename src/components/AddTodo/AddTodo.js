@@ -19,27 +19,32 @@ class AddTodo extends Component {
 
     render() {
         return (
-            <div>
-                <div>
-                    <label>
-                        Name:
+            <div className="box">
+                <div className="vr vr_x2">
+                    <label className="field">
+                        <span className="field-label">Name:</span>
                         <input
+                            className="field-input"
                             type="text"
                             placeholder="Name"
                             onChange={(event) => this.changeField(event, 'name')}
                         />
                     </label>
-                </div>
-                <div>
-                    <label>
-                        Description:
+                    <label className="field">
+                        <span className="field-label">Description:</span>
                         <textarea
+                            className="field-input field-input_lrg"
                             onChange={(event) => this.changeField(event, 'description')}
                         />
                     </label>
                 </div>
                 <div>
-                    <button onClick={this.clickAddTodo}>Add Todo</button>
+                    <button
+                        className="btn"
+                        onClick={this.clickAddTodo}
+                    >
+                        Add Todo
+                    </button>
                 </div>
             </div>
         );
