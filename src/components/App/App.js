@@ -75,15 +75,17 @@ class App extends Component {
                     <Header />
                 </div>
                 <div className="scaffold-bd">
-                    <h2>Daily Todo List</h2>
-                    <AddTodo
-                        addTodoCallback={this.addTodoItem}
-                    />
-                    <TodoList
-                        list={this.state.sampleList}
-                        completeCallback={this.completeTodo}
-                        deleteCallback={this.deleteTodoFromList}
-                    />
+                    <div className="container">
+                        <h2>Daily Todo List</h2>
+                        <AddTodo
+                            addTodoCallback={this.addTodoItem}
+                        />
+                        <TodoList
+                            list={this.state.sampleList}
+                            completeCallback={this.completeTodo}
+                            deleteCallback={this.deleteTodoFromList}
+                        />
+                    </div>
                 </div>
                 <div className="scaffold-ft">
                     <Footer />

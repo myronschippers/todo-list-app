@@ -27,3 +27,15 @@ Scaffold
 .scaffold-bd {
 	flex: 1 0 auto;
 }
+
+/* ----------------------------------------------------------------------
+Container
+---------------------------------------------------------------------- */
+
+.container {
+    width: 500px;
+	max-width: 100%;
+    padding: 20px;
+    margin: auto;
+    box-sizing: border-box;
+}
