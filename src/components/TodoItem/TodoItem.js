@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './TodoItem.css';
 
 class TodoItem extends Component {
     changeCompleteStatus = (event) => {
@@ -21,7 +22,7 @@ class TodoItem extends Component {
 
         return (
             <li>
-                <div>
+                <div className="todoPill">
                     <div>
                         <input
                             type="checkbox"
@@ -31,11 +32,12 @@ class TodoItem extends Component {
                         />
                     </div>
                     <div>
-                        <h4>{todo.name}</h4>
-                        <p>{todo.description}</p>
+                        <h4 className="todoPill-hdg">{todo.name}</h4>
+                        <p className="todoPill-sub">{todo.description}</p>
                     </div>
                     <div>
                         <button
+                            className="btn btn_warning"
                             onClick={this.clickDelete}
                         >
                             Delete

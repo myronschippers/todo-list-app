@@ -76,10 +76,12 @@ class App extends Component {
                 </div>
                 <div className="scaffold-bd">
                     <div className="container">
-                        <h2>Daily Todo List</h2>
-                        <AddTodo
-                            addTodoCallback={this.addTodoItem}
-                        />
+                        <h2 className="hdg hdg_1">Daily Todo List</h2>
+                        <div className="vr vr_x2">
+                            <AddTodo
+                                addTodoCallback={this.addTodoItem}
+                            />
+                        </div>
                         <TodoList
                             list={this.state.sampleList}
                             completeCallback={this.completeTodo}
