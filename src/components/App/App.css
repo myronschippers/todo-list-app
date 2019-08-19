@@ -178,3 +178,37 @@ Button
 /* ----------------------------------------------------------------------
 Page Title
 ---------------------------------------------------------------------- */
+
+.pageTitle {
+	padding-bottom: 1px;
+	margin: 0 0 30px;
+	position: relative;
+}
+
+.pageTitle:before {
+	content: "";
+	display: block;
+	width: 80%;
+	background-color: rgb(0,0,0,0.3);
+	position: absolute;
+	bottom: 0;
+}
+
+.pageTitle > * {
+	margin: 0;
+}
+
+.pageTitle > * + * {
+	margin-top: 10px;
+}
+
+.pageTitle-main {
+	color: #37668c;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.pageTitle-sub {
+	color: #7f7f8a;
+	font-size: 1rem;
+}
