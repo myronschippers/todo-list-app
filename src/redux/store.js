@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
-import rootReducer from './reducers/_root.reducers.js'
+import * as rootReducer from './reducers/_root.reducers.js'
 
 // this line creates an array of all of redux middleware you want to use
 // we don't want a whole ton of console logs in our production code
