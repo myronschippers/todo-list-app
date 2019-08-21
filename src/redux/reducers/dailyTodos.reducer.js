@@ -1,14 +1,23 @@
-const dailyTodos = (state = [], action) => {
-    switch (action.type) {
-        case 'DAILY_TODO_ADD':
-            return [...state, action.payload];
-        case 'DAILY_TODO_SET':
-            return [...action.payload];
-        case 'DAILY_TODO_CLEAR':
-            return [];
-        default:
-            return state;
-    }
+const sampleList = [
+    {
+        name: 'Mail Letter',
+        description: 'A sample description of our todo.',
+        isComplete: false,
+    },
+    {
+        name: 'Wash Dishes',
+        description: 'A sample description of our todo.',
+        isComplete: true,
+    },
+    {
+        name: 'Cut Grass',
+        description: 'A sample description of our todo.',
+        isComplete: false,
+    },
+];
+
+const dailyTodos = (state = sampleList, action) => {
+    return state;
 };
 
 export default dailyTodos;
