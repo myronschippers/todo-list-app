@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { connect } from 'react-redux';
 
 // COMPONENTS
 import Header from '../Header/Header';
@@ -97,4 +98,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default connect()(App);
