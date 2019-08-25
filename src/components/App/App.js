@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import mapStoreToProps from '../../redux/mapStoreToProps';
 
 // COMPONENTS
 import Header from '../Header/Header';
@@ -98,4 +99,4 @@ class App extends Component {
     }
 }
 
-export default connect()(App);
+export default connect(mapStoreToProps)(App);
