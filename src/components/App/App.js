@@ -10,25 +10,6 @@ import TodoList from '../TodoList/TodoList';
 import AddTodo from '../AddTodo/AddTodo';
 
 class App extends Component {
-    state = {
-        sampleList: [
-            {
-                name: 'Mail Letter',
-                description: 'A sample description of our todo.',
-                isComplete: false,
-            },
-            {
-                name: 'Wash Dishes',
-                description: 'A sample description of our todo.',
-                isComplete: true,
-            },
-            {
-                name: 'Cut Grass',
-                description: 'A sample description of our todo.',
-                isComplete: false,
-            },
-        ],
-    }
 
     clickAddToList = (event) => {
         const newSampleList = this.state.sampleList;
@@ -71,6 +52,7 @@ class App extends Component {
     }
 
     render() {
+        console.log('props: ', this.props);
         return (
             <div className="scaffold">
                 <div className="scaffold-hd">
@@ -85,7 +67,7 @@ class App extends Component {
                             />
                         </div>
                         <TodoList
-                            list={this.state.sampleList}
+                            list={this.props.store.dailyTodos}
                             completeCallback={this.completeTodo}
                             deleteCallback={this.deleteTodoFromList}
                         />
